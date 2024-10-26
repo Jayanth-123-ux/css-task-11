@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "header"
+    "main"
+    "item3"
+    "footer"
+     ;
+    grid-gap: 10px;
+}
+.item1{
+    grid-area: header;
+    height: 15vh;
+    background-color: greenyellow;
+}
+.item4{
+    height: 15vh;
+    background-color: greenyellow;
+}
+.main{
+    border: 1px solid black;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto ;
+    grid-template-areas: 
+    "section1 section2 aside aside"
+    "section3 section3 aside aside"
+    "section3 section3 aside2 aside2";
+    grid-gap: 10px 10px;
+}
+.item01{
+    grid-area: section1;
+    background-color: white;
+}
+.item02{
+    grid-area: section2;
+    background-color: lightcoral;
+}
+.item03{
+    grid-area: aside;
+    background-color: aquamarine;
+}
+.item04{
+    grid-area: section3;
+    background-color: red;
+}
+.item05{
+    grid-area: aside2;
+    background-color: lightcoral;
+}
+.item3{
+    border: 1px solid black;
+    height: 15vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-gap: 10px 10px;
+}
+.box1{
+    background-color: orange;
+}
+.box2{
+    background-color: ;
+}
+.box3{
+    background-color: orange;
+}
+.align{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px white;
+}
+p{
+    margin-left:600px ;
+    margin-top: 10px;
+    color: white;
+}
+.withoutareas{
+    text-decoration: none;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    box-shadow: 1px 3px 5px black;
+}
